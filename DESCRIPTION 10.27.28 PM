@@ -1,0 +1,16 @@
+Package: evalDTR
+Title: Evaluating Dynamic Treatment Rules
+Version: 0.0.0.9000
+Authors@R: 
+   c( person("Jiongyi", "Cao", , "caojy22@mails.tsinghua.edu.cn", role = c("aut", "cre")),
+    person("Michael Lingzhi", "Li", , "mili@hbs.edu", role = "aut"),
+    person("Kosuke", "Imai", , "imai@harvard.edu", role = "aut"))
+Maintainer: Jiongyi Cao <caojy22@mails.tsinghua.edu.cn>
+Description: This package provides various metrixs for evaluating
+    Individualized Dynamic Treatment Rules under SMART. The provided
+    metrics include Population Average Value (PAV), Population Average
+    Prescription Effect (PAPE), Local PAV and Local PAPE. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
