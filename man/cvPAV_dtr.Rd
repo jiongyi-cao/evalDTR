@@ -4,10 +4,12 @@
 \alias{cvPAV_dtr}
 \title{Function to compute the Population Average Value under SMART for cross-validated DTR.}
 \usage{
-cvPAV_dtr(Acv, Dhacvt, Ycv, indcv, centered = FALSE)
+cvPAV_dtr(Acv, Dhatcv, Ycv, indcv, centered = FALSE)
 }
 \arguments{
 \item{Acv}{A matrix of the actual treatment. Each row represents a unit-level randomized sequential assignments.}
+
+\item{Dhatcv}{A list of DTR matrix derived from each trail of cross-validation.}
 
 \item{Ycv}{A vector of the final outcome variable of interest for each sample.}
 
@@ -15,8 +17,6 @@ cvPAV_dtr(Acv, Dhacvt, Ycv, indcv, centered = FALSE)
 
 \item{centered}{If \code{TRUE}, the outcome variables would be centered before processing. This minimizes
 the variance of the estimator. Default is \code{FALSE}.}
-
-\item{Dhatcv}{A list of DTR matrix derived from each trail of cross-validation.}
 }
 \value{
 A list that contains the following items: \item{pav}{The estimated population value of the estimated DTR.},

@@ -30,7 +30,7 @@
 #' pav_est$pav
 #' pav_est$sd
 #' @export cvPAV_dtr
-cvPAV_dtr <- function (Acv,Dhacvt,Ycv,indcv,centered = FALSE){
+cvPAV_dtr <- function (Acv,Dhatcv,Ycv,indcv,centered = FALSE){
   t = ncol(Acv)
   n = nrow(Acv)
   nfolds = max(indcv)
@@ -114,7 +114,7 @@ cvPAV_dtr <- function (Acv,Dhacvt,Ycv,indcv,centered = FALSE){
 #' pape_est$sd
 #' @export cvPAPE_dtr
 
-cvPAPE_dtr <- function (Acv,Dhacvt,Ycv,indcv,centered = FALSE){
+cvPAPE_dtr <- function (Acv,Dhatcv,Ycv,indcv,centered = FALSE){
   t = ncol(Acv)
   n = nrow(Acv)
   nfolds = max(indcv)
